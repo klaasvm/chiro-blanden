@@ -97,18 +97,18 @@
             <figure class="g-item zoom" style="--i:0"><img src="images/763008589.jpg" width="280" height="210" alt="Seniortent (5 m × 5 m × 2,85 m)" loading="lazy" decoding="async" tabindex="0">
               <figcaption>Seniortent (5 m × 5 m × 2,85 m)</figcaption>
             </figure>
-            <figure class="g-item zoom" style="--i:1"><img src="images/img-2761.jpg" width="342" height="289" alt="GP-mediumtent (10 m × 5 m × 3,2 m)" loading="lazy" decoding="async" tabindex="0">
+            <figure class="g-item zoom" style="--i:1"><img src="images/132530611.jpg" width="280" height="210" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
+            <figure class="g-item zoom" style="--i:2"><img src="images/img-2761.jpg" width="342" height="289" alt="GP-mediumtent (10 m × 5 m × 3,2 m)" loading="lazy" decoding="async" tabindex="0">
               <figcaption>GP-mediumtent (10 m × 5 m × 3,2 m)</figcaption>
             </figure>
-            <figure class="g-item zoom" style="--i:2"><img src="images/821836271.jpg" width="278" height="209" alt="GP-largetent (16 m × 5 m × 3,5 m)" loading="lazy" decoding="async" tabindex="0">
+            <figure class="g-item zoom" style="--i:3"><img src="images/img-2763.jpg" width="226" height="301" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
+            <figure class="g-item zoom" style="--i:4"><img src="images/821836271.jpg" width="278" height="209" alt="GP-largetent (16 m × 5 m × 3,5 m)" loading="lazy" decoding="async" tabindex="0">
               <figcaption>GP-largetent (16 m × 5 m × 3,5 m)</figcaption>
             </figure>
-            <figure class="g-item zoom" style="--i:3"><img src="images/766499854.jpg" width="281" height="210" alt="Circustent (15 m × 15 m × 6 m)" loading="lazy" decoding="async" tabindex="0">
+            <figure class="g-item zoom" style="--i:5"><img src="images/screenshot-20261111-192730.png" width="34" height="27" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
+            <figure class="g-item zoom" style="--i:6"><img src="images/766499854.jpg" width="281" height="210" alt="Circustent (15 m × 15 m × 6 m)" loading="lazy" decoding="async" tabindex="0">
               <figcaption>Circustent (15 m × 15 m × 6 m)</figcaption>
             </figure>
-            <figure class="g-item zoom" style="--i:4"><img src="images/132530611.jpg" width="280" height="210" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
-            <figure class="g-item zoom" style="--i:5"><img src="images/img-2763.jpg" width="226" height="301" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
-            <figure class="g-item zoom" style="--i:6"><img src="images/screenshot-20261111-192730.png" width="34" height="27" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
             <figure class="g-item zoom" style="--i:7"><img src="images/8972439.jpg" width="305" height="203" alt="" loading="lazy" decoding="async" tabindex="0"></figure>
           </div>
         </div>
@@ -210,6 +210,181 @@
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="s s-html v-wrap bg-default pad-0">
+        <div class="wrap">
+          <div class="cbk" id="cbk">
+            <div class="cbk-head">
+              <div class="cbk-titles"> <span class="cbk-year"></span>
+                <h3 class="cbk-title">Kalender</h3>
+              </div>
+              <div class="cbk-navs">
+                <button type="button" class="cbk-nav" data-dir="-1" aria-label="Vorige maand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+                <button type="button" class="cbk-nav" data-dir="1" aria-label="Volgende maand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+              </div>
+            </div>
+            <div class="cbk-wds"><span>ma</span><span>di</span><span>wo</span><span>do</span><span>vr</span><span>za</span><span>zo</span></div>
+            <div class="cbk-grid cbk-loading"></div>
+            <ul class="cbk-legend">
+              <li><span class="cbk-dot cbk-s-vrij"></span>Vrij</li>
+              <li><span class="cbk-dot cbk-s-optie"></span>In optie</li>
+              <li><span class="cbk-dot cbk-s-verhuurd"></span>Verhuurd</li>
+              <li><span class="cbk-dot cbk-s-geen"></span>Geen verhuur</li>
+            </ul>
+            <p class="cbk-msg" hidden></p>
+          </div>
+          <style>
+.cbk{--cbk-vrij:#2e9e5b;--cbk-optie:#e8890c;--cbk-verhuurd:#e0453a;--cbk-geen:#8a8f98;--cbk-line:rgba(127,127,127,.18);
+  max-width:560px;margin:0 auto;padding:1.5rem;border:1px solid var(--cbk-line);border-radius:22px;
+  background:linear-gradient(180deg,rgba(127,127,127,.06),rgba(127,127,127,0) 140px);box-shadow:0 10px 40px -18px rgba(0,0,0,.25);
+  font:inherit;color:inherit;box-sizing:border-box}
+.cbk *{box-sizing:border-box}
+.cbk-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.25rem}
+.cbk-year{display:block;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.55}
+.cbk-title{margin:.1rem 0 0;font-size:1.75rem;line-height:1.1;text-transform:capitalize}
+.cbk-navs{display:flex;gap:.4rem}
+.cbk-nav{display:grid;place-items:center;width:2.6rem;height:2.6rem;padding:0;border:1px solid var(--cbk-line);border-radius:14px;
+  background:rgba(127,127,127,.06);color:inherit;cursor:pointer;transition:background .2s,transform .15s,opacity .2s}
+.cbk-nav svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.cbk-nav:hover:not(:disabled){background:rgba(127,127,127,.16)}
+.cbk-nav:active:not(:disabled){transform:scale(.92)}
+.cbk-nav:disabled{opacity:.25;cursor:default}
+.cbk-wds,.cbk-grid{display:grid;grid-template-columns:repeat(7,1fr)}
+.cbk-wds span{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.45;padding-bottom:.6rem}
+.cbk-wds span:nth-child(n+6){opacity:.7}
+.cbk-grid{row-gap:6px}
+.cbk-grid.cbk-anim{animation:cbk-in .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes cbk-in{from{opacity:0;transform:translateX(var(--cbk-from,12px))}to{opacity:1;transform:none}}
+/* Elke dag is een cel; opeenvolgende dagen met dezelfde status vormen één doorlopende band */
+.cbk-day{position:relative;height:2.9rem;display:grid;place-items:center}
+.cbk-day::before{content:"";position:absolute;inset:3px 0;background:transparent}
+.cbk-day.cbk-start::before{left:3px;border-radius:12px 0 0 12px}
+.cbk-day.cbk-end::before{right:3px;border-radius:0 12px 12px 0}
+.cbk-day.cbk-start.cbk-end::before{border-radius:12px}
+.cbk-n{position:relative;display:grid;place-items:center;width:2.3rem;height:2.3rem;border-radius:50%;font-size:.95rem;font-weight:500;font-variant-numeric:tabular-nums}
+.cbk-s-vrij .cbk-n{color:var(--cbk-vrij);font-weight:600}
+.cbk-s-optie::before{background:color-mix(in srgb,var(--cbk-optie) 18%,transparent)}
+.cbk-s-optie .cbk-n{color:var(--cbk-optie);font-weight:700}
+.cbk-s-verhuurd::before{background:color-mix(in srgb,var(--cbk-verhuurd) 16%,transparent)}
+.cbk-s-verhuurd .cbk-n{color:var(--cbk-verhuurd);font-weight:700}
+.cbk-s-geen::before{background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--cbk-geen) 18%,transparent) 0 5px,color-mix(in srgb,var(--cbk-geen) 8%,transparent) 5px 10px)}
+.cbk-s-geen .cbk-n{color:var(--cbk-geen);text-decoration:line-through;text-decoration-thickness:1.5px}
+.cbk-past .cbk-n{opacity:.22;font-weight:400}
+.cbk-today .cbk-n{box-shadow:inset 0 0 0 2px currentColor}
+.cbk-today:not([class*="cbk-s-"]) .cbk-n{color:inherit}
+/* Laadanimatie */
+.cbk-loading .cbk-day .cbk-n{color:transparent;background:rgba(127,127,127,.1);animation:cbk-pulse 1.2s ease-in-out infinite}
+@keyframes cbk-pulse{50%{opacity:.4}}
+.cbk-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;list-style:none;padding:1rem 0 0;margin:1.1rem 0 0;border-top:1px solid var(--cbk-line);font-size:.82rem}
+.cbk-legend li{display:flex;align-items:center;gap:.45rem;padding:.3rem .7rem;border-radius:999px;background:rgba(127,127,127,.07)}
+.cbk-dot{width:.7rem;height:.7rem;border-radius:50%}
+.cbk-dot.cbk-s-vrij{background:var(--cbk-vrij)}
+.cbk-dot.cbk-s-optie{background:var(--cbk-optie)}
+.cbk-dot.cbk-s-verhuurd{background:var(--cbk-verhuurd)}
+.cbk-dot.cbk-s-geen{background:var(--cbk-geen)}
+.cbk-msg{margin:.8rem 0 0;text-align:center;font-size:.88rem;opacity:.7}
+@media (max-width:420px){
+  .cbk{padding:1rem;border-radius:18px}
+  .cbk-title{font-size:1.4rem}
+  .cbk-day{height:2.5rem}
+  .cbk-n{width:1.95rem;height:1.95rem;font-size:.85rem}
+  .cbk-legend{font-size:.75rem}
+}
+@media (prefers-reduced-motion:reduce){.cbk-grid.cbk-anim,.cbk-loading .cbk-n{animation:none}}
+</style>
+          <script>
+(function () {
+  // Bron met de bezette dagen: { "JJJJ-MM-DD": "Verhuurd" | "In optie" | "Geen verhuur" }
+  var URL = 'https://raw.githubusercontent.com/klaasvm/chiro-blanden-verhuur-api/refs/heads/main/calendar.json';
+  var MAANDEN_VOORUIT = 18; // hoe ver je maximaal vooruit kunt bladeren
+  var KLASSE = { 'Verhuurd': 'verhuurd', 'In optie': 'optie', 'Geen verhuur': 'geen' };
+  var MAANDNAMEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+
+  var el = document.getElementById('cbk');
+  var grid = el.querySelector('.cbk-grid');
+  var title = el.querySelector('.cbk-title');
+  var year = el.querySelector('.cbk-year');
+  var msg = el.querySelector('.cbk-msg');
+  var prev = el.querySelector('[data-dir="-1"]');
+  var next = el.querySelector('[data-dir="1"]');
+
+  var nu = new Date();
+  var startJaar = nu.getFullYear(), startMaand = nu.getMonth();
+  var vandaag = sleutel(startJaar, startMaand, nu.getDate());
+  var offset = 0; // aantal maanden na de huidige maand
+  var data = null;
+
+  // Lokale datum als "JJJJ-MM-DD" (geen UTC, anders schuift de dag soms op)
+  function sleutel(j, m, d) {
+    return j + '-' + String(m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+  }
+
+  // Statusklasse van een dag, of '' voor voorbije dagen
+  function status(j, m, d) {
+    var k = sleutel(j, m, d);
+    if (k < vandaag) return '';
+    return data ? (KLASSE[data[k]] || 'vrij') : '';
+  }
+
+  function teken(richting) {
+    var datum = new Date(startJaar, startMaand + offset, 1);
+    var j = datum.getFullYear(), m = datum.getMonth();
+    var aantal = new Date(j, m + 1, 0).getDate();
+    var leeg = (datum.getDay() + 6) % 7; // maandag = eerste dag
+
+    title.textContent = MAANDNAMEN[m];
+    year.textContent = j;
+    prev.disabled = offset <= 0;
+    next.disabled = offset >= MAANDEN_VOORUIT;
+
+    var html = '';
+    for (var i = 0; i < leeg; i++) html += '<div></div>';
+    for (var d = 1; d <= aantal; d++) {
+      var k = sleutel(j, m, d);
+      var s = status(j, m, d);
+      var kol = (leeg + d - 1) % 7;
+      var cls = 'cbk-day';
+      if (k < vandaag) cls += ' cbk-past';
+      if (s) {
+        cls += ' cbk-s-' + s;
+        // Band begint/eindigt waar de buurdag een andere status heeft of op een nieuwe week
+        if (kol === 0 || d === 1 || status(j, m, d - 1) !== s) cls += ' cbk-start';
+        if (kol === 6 || d === aantal || status(j, m, d + 1) !== s) cls += ' cbk-end';
+      }
+      if (k === vandaag) cls += ' cbk-today';
+      var label = d + ' ' + MAANDNAMEN[m] + ': ' + (k < vandaag ? 'voorbij' : data ? (data[k] || 'vrij') : 'laden');
+      html += '<div class="' + cls + '" title="' + label + '" aria-label="' + label + '"><span class="cbk-n">' + d + '</span></div>';
+    }
+    grid.innerHTML = html;
+
+    if (richting) {
+      grid.style.setProperty('--cbk-from', richting * 14 + 'px');
+      grid.classList.remove('cbk-anim');
+      void grid.offsetWidth; // animatie opnieuw starten
+      grid.classList.add('cbk-anim');
+    }
+  }
+
+  prev.addEventListener('click', function () { if (offset > 0) { offset--; teken(-1); } });
+  next.addEventListener('click', function () { if (offset < MAANDEN_VOORUIT) { offset++; teken(1); } });
+
+  teken();
+  fetch(URL, { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (json) { data = json || {}; grid.classList.remove('cbk-loading'); teken(); })
+    .catch(function () {
+      grid.classList.remove('cbk-loading');
+      msg.textContent = 'De kalender kon niet geladen worden. Probeer het later opnieuw.';
+      msg.hidden = false;
+    });
+})();
+</script>
+        </div>
+      </section>
+      <section class="s s-spacer v-space bg-default pad-0">
+        <div class="wrap">
+          <div class="spc" style="height:64px"></div>
         </div>
       </section>
       <section class="s s-html v-wrap bg-default pad-0">
